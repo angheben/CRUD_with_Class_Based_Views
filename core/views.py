@@ -17,3 +17,7 @@ class CreateProductView(CreateView):
     template_name = 'product_form.html'
     fields = ['name', 'price']
     success_url = reverse_lazy('index')
+
+
+class UpdateProductView(UpdateView):
+    pass
