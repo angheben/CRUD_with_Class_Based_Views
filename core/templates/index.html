@@ -15,9 +15,9 @@
         <tbody>
           {% for product in products %}
             <tr>
-              <td>{{product.id}}</td>
-              <td>{{product.name}}</td>
-              <td>US$ {{product.price|intcomma}}</td>
+              <td>{{produto.id}}</td>
+              <td>{{produto.name}}</td>
+              <td>US$ {{produto.price|intcomma}}</td>
               <td>
                 <a class="btn btn-warning" href="{% url 'update_product' product.pk %}">Edit</a>
                 <a class="btn btn-danger" href="{% url 'delete_product' product.pk %}">Delete</a>
